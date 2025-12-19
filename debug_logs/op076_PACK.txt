@@ -1,0 +1,38 @@
+MODEL : efficientnetv2_b0_bnless_int8.tflite
+OP #76: PACK
+
+=== IFM0 ===
+name    : build_efficientnetv2_b0_full_bnless/block5a_se_reshape/strided_slice
+index   : 273
+shape   : []
+dtype   : <class 'numpy.int32'>
+quant   : {'scales': [], 'zero_points': [], 'axis': 0, 'scale_tuple': 0.0, 'zp_tuple': 0}
+values(int):
+1
+
+=== IFM1 ===
+name    : build_efficientnetv2_b0_full_bnless/block4a_se_reshape/Reshape/shape/1
+index   : 4
+shape   : []
+dtype   : <class 'numpy.int32'>
+quant   : {'scales': [], 'zero_points': [], 'axis': 0, 'scale_tuple': 0.0, 'zp_tuple': 0}
+values(int):
+1
+
+=== BIAS ===
+name    : build_efficientnetv2_b0_full_bnless/block4a_se_reshape/Reshape/shape/1
+index   : 4
+shape   : []
+dtype   : <class 'numpy.int32'>
+quant   : {'scales': [], 'zero_points': [], 'axis': 0, 'scale_tuple': 0.0, 'zp_tuple': 0}
+values(int):
+1
+
+=== OFM ===
+name    : build_efficientnetv2_b0_full_bnless/block5a_se_reshape/Reshape/shape
+index   : 274
+shape   : [4]
+dtype   : <class 'numpy.int32'>
+quant   : {'scales': [], 'zero_points': [], 'axis': 0, 'scale_tuple': 0.0, 'zp_tuple': 0}
+values(int):
+[  1   1   1 576]

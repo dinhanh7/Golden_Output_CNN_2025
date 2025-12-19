@@ -1,0 +1,28 @@
+MODEL : efficientnetv2_b0_bnless_int8.tflite
+OP #158: HARD_SWISH
+
+=== IFM0 ===
+name    : build_efficientnetv2_b0_full_bnless/block6a_se_reduce/BiasAdd;build_efficientnetv2_b0_full_bnless/block6a_se_reduce/Conv2D;build_efficientnetv2_b0_full_bnless/block6a_se_reduce/BiasAdd/ReadVariableOp
+index   : 355
+shape   : [1, 1, 1, 28]
+dtype   : <class 'numpy.int8'>
+quant   : {'scales': [0.22215421497821808], 'zero_points': [-127], 'axis': 0, 'scale_tuple': 0.22215421497821808, 'zp_tuple': -127}
+values(int):
+[[[[-104 -124  -87 -128  -96 -125 -126 -126 -128 -127  -74 -124 -124   21 -126 -126 -125  -90 -127  -65 -126 -111
+    -119 -127 -127 -127 -127 -128]]]]
+
+=== IFM1 ===
+N/A
+
+=== BIAS ===
+N/A
+
+=== OFM ===
+name    : build_efficientnetv2_b0_full_bnless/block6a_se_reduce/truediv;build_efficientnetv2_b0_full_bnless/block1a_project_activation/truediv/y;build_efficientnetv2_b0_full_bnless/block1a_project_activation/add/y;build_efficientnetv2_b0_full_bnless/block6a_se_reduce/Relu6;build_efficientnetv2_b0_full_bnless/block6a_se_reduce/add;build_efficientnetv2_b0_full_bnless/block6a_se_reduce/mul;build_efficientnetv2_b0_full_bnless/block2a_expand_activation/truediv;build_efficientnetv2_b0_full_bnless/block1a_project_activation/truediv/y
+index   : 356
+shape   : [1, 1, 1, 28]
+dtype   : <class 'numpy.int8'>
+quant   : {'scales': [0.22152312099933624], 'zero_points': [-127], 'axis': 0, 'scale_tuple': 0.22152312099933624, 'zp_tuple': -127}
+values(int):
+[[[[-104 -125  -87 -127  -96 -126 -126 -126 -127 -127  -74 -125 -125   21 -126 -126 -126  -90 -127  -65 -126 -111
+    -121 -127 -127 -127 -127 -127]]]]
