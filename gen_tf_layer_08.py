@@ -2,7 +2,7 @@ import numpy as np
 import tensorflow as tf
 import argparse
 import math
-
+#python gen_tf_layer_08.py --ifm_height 28 --ifm_width 28 --ifm_channel 48 --weight_filter 192 --stride1 1 --padding1 1
 # BIAS_FRAC_BIT = 7
 # --- BẮT ĐẦU ĐOẠN BỔ SUNG CÁC HÀM XỬ LÝ SCALE ---
 

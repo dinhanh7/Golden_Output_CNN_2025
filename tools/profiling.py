@@ -3,6 +3,8 @@ import os
 import re
 import sys
 
+
+# --op ?(ví dụ 22 là --op 22)
 def find_log_file(op_number, log_dir):
     """
     Find the full log file name for a given operation number.
